@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main(void){
+    int i;
+    int number;
+    int num = 0;
+    scanf("%d", &number);
+    for(i = 0; i < 11; i++){
+        printf("%dx%d = %d \n", num, number, num*number);
+        num = num+1;
+    }
+    return 0;
+    
+}
