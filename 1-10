@@ -1,0 +1,11 @@
+//preprocessor directive
+#include <stdio.h>
+int main(void) {//main function
+    int i = 0;//variable declaration
+    printf("I ");//executable statement
+    for(i = 0; i < 3; i++){
+        printf("love ");//executable statement
+    }
+    printf("programming! ");//executable statement
+    return 0;// return statement
+}
