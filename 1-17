@@ -1,0 +1,8 @@
+#include <stdio.h>
+int main(void) {
+    char letter;
+    printf("Please enter a letter: ");
+    scanf("%c", &letter);
+    printf("I read the letter %c.\n",letter);
+    return 0;
+    }
