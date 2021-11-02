@@ -1,0 +1,8 @@
+#include <stdio.h>
+int main(){
+    printf("Dear Procrastinator,\n");
+    printf("You still have to wait for %d days ", 25-23 );
+    printf("(%d minutes ", 60*24*(25-23));
+    printf("or %d seconds) before you can procrastinate! ", 60*60*24*(25-23));
+    return 0;
+}
