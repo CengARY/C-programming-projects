@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main(void)
+{
+    double kilometers;
+    double mil;
+    
+    mil = 0.621371;
+    scanf("%lf", &kilometers);
+    printf("%.6lf", kilometers*mil );
+    
+    return 0;
+}
