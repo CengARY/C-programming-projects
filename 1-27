@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main(void){
+   int i;
+   int num;
+   int sum;
+   sum = 0;
+   int numbers;
+   double average;
+   scanf("%d ", &num);
+   
+   for(i = 0; i < num; i++)
+   {
+       scanf("%d", &numbers);
+       sum += numbers;
+       
+   }
+   average = (double)sum / num;
+   printf("%.2lf ", average);
+   return 0;
+}
