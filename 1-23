@@ -9,7 +9,7 @@ int main(void){
     
     fahrenheit = celcius * 9.0 / 5.0 + 32.0;
     
-    printf("%.1lf", celcius * 9.0 / 5.0 + 32.0 );
+    printf("%.1lf", fahrenheit);
     
     return 0;
 }
