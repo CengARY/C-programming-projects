@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main(void)
+{
+    int currentPopulation;
+    
+    double growthRate;
+    
+    double futurePopulation;
+    
+    int whole;
+    
+    scanf("%d\n", &currentPopulation);
+    
+    scanf("%lf\n", &growthRate);
+    
+    futurePopulation = currentPopulation * (1 + (growthRate/100));
+    
+    whole = (int)futurePopulation;
+    
+    printf("%d", whole);
+}
