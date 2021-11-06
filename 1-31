@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main(void) 
+{
+    int aCementKg;
+    int pCement;
+    double aCement;
+    scanf("%lf", &aCement);
+    aCementKg = 120;
+    pCement = 45;
+    double sum1; 
+    int sum;
+    int total;
+    sum1 = aCement/aCementKg + 1;
+    sum = (int)sum1;
+    total = sum*pCement;
+    printf("%d", total);
+}
