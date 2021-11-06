@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main(void)
+{
+    double myMoney;
+    
+    double bookMoney;
+    
+    scanf("%lf", &myMoney);
+    
+    scanf("%lf", &bookMoney);
+    
+    int sum; 
+    
+    double sum1;
+    
+    sum1 = myMoney/bookMoney;
+    
+    sum = (int)sum1;
+    
+    printf("%d", sum);
+    
+    return 0;
+}
