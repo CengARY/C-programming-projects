@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main(void)
+{
+    double a = 5.00000000000000001;//how many zero?
+    double b = 5.00000000000000000;
+    int result;
+    printf("Check: Is a == b ?\n");
+    result = a == b;
+    printf("result is %d\n", result);
+    if(result){
+        printf("True\n");
+    }else{
+        printf("False\n");
+    }return 0;
+}
