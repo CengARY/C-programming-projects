@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main(void)
+{
+    int i;
+    int teamMember;
+    int kilo1, kilo2;
+    int team1 = 0;
+    int team2 = 0;
+    scanf("%d\n", &teamMember);
+    for(i=0; i < teamMember; i++){
+        scanf("%d\n", &kilo1);
+        scanf("%d\n", &kilo2);
+        team1 += kilo1;
+        team2 += kilo2;
+    }
+    if(team1 >= team2){
+        printf("Team 1 has an advantage\nTotal weight for team 1: %d\nTotal weight for team 2: %d\n", team1, team2);
+    }
+    else{
+        printf("Team 2 has an advantage\nTotal weight for team 1: %d\nTotal weight for team 2: %d\n", team1, team2);
+    }
+    return 0;
+}
+
