@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main(void)
+{
+    int a = 5;
+    int b = 2;
+    int result;
+    printf("Check: is a != b?\n");
+    result = (a != b);
+    printf("Result is %d.\n", result);
+    if(result) {
+        printf("True!\n");
+    }
+    else{
+        printf("False\n");
+    }
+    return 0;
+}
