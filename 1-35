@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main(void){
+    int hour = 0; 
+    
+    scanf("%d ", &hour);
+    int total = 10+5*hour;
+    
+    int totalExceeds53 = total > 53;
+    if(totalExceeds53) {
+        printf("53");
+    }else{
+        printf("%d", total);
+    }return 0;
+}
