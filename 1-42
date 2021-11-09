@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main(void)
+{
+    int array[3];
+    array[0] = 12;
+    array[1] = 206;
+    array[2] = 1;
+    printf("First elemet is %d.\n", array[0]);
+    printf("Second elemet is %d.\n", array[1]);
+    printf("Third elemet is %d.\n", array[2]);
+    return 0;
+    }
+    
