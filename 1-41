@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main(void){
+    int meter;
+    int leaf;
+    scanf("%d\n", &meter);
+    scanf("%d", &leaf);
+    if(meter <= 5 && leaf >= 8){
+        printf("Tinuviel\n");
+    }
+    else if(meter >= 10 && leaf >= 10){
+        printf("Calaelen\n");
+    }
+    else if(meter <= 8 && leaf <= 5){
+        printf("Falarion\n");
+    }
+    else if(meter >= 12 && leaf <= 7){
+        printf("Dorthonion\n");
+    }
+    else{
+        printf("Uncertain");
+    }
+    return 0;
+}
