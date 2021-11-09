@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main(void){
+    int array[10];
+    
+    int cellNumber = 0;
+    scanf("%d %d %d %d %d %d %d %d %d %d\n", &array[0], &array[1], &array[2], &array[3], &array[4], &array[5], &array[6], &array[7], &array[8], &array[9]);
+    scanf("%d", &cellNumber);
+    
+    printf("%d", array[cellNumber]);
+    
+    return 0;
+}
