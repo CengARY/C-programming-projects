@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main(void){
+    double array[50];
+    int i;
+    int j;
+    int car;
+    double carWeight = 0.0;
+    int cellNumber = 0;
+    double total = 0.0;
+    double average = 0.0;
+    scanf("%d\n", &car);
+    for(i = 0; i < car; i++){
+        scanf("%lf", &carWeight);
+        array[cellNumber] = carWeight;
+        cellNumber = cellNumber + 1;
+        total = total + carWeight;
+    }average = total / car;
+    for(i = 0; i < car; i++){
+        printf("%.1lf\n", average-array[i]);
+    }
+    return 0;
+}
