@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main(void){
+    double prices[10];
+    int i;
+    int ingr;
+    double ibs[4]= {0.250, 1.5, 0.300, 1.0};
+    double total = 0.0;
+    scanf("%d", &ingr);
+    for(i = 0; i < ingr; i++){
+        scanf("%lf", &prices[i]);
+        total = total + prices[i]*ibs[i];
+    }
+    printf("%.6lf", total);
+    return 0;
+    
+}
