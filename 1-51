@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main(void){
+    int numberCity;
+    int i;
+    int nbigCities = 0;
+    int population;
+    scanf("%d", &numberCity);
+    for(i = 0; i < numberCity; i++){
+        scanf("%d", &population);
+        if(population > 10000){
+            nbigCities++;
+        }
+    }
+    printf("%d", nbigCities);
+    
+    return 0;
+    
+}
