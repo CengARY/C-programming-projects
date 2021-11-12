@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()
+{
+    int ningr=0;
+    int i;
+    int idIngr;
+    double price[10];
+    double totalPrice = 0.0;
+    double readPrice=0.0;
+
+    scanf("%d", &ningr);
+
+    for(i = 0; i < ningr; i++){
+        scanf("%lf",&readPrice);
+        price[i] = readPrice;
+    }
+
+    for (idIngr = 0; idIngr < ningr; idIngr++)
+    {
+        double quantity;
+        scanf("%lf",&quantity);
+        totalPrice = totalPrice + price[idIngr] * quantity;
+    }
+    printf("%lf\n",totalPrice);
+
+    return 0;
+}
