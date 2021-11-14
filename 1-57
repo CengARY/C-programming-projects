@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main(void){
+    int signaturesNeeded = 400;
+    int day = 0;
+    int newSignatures = 1;
+    int totalSignatures = 1;
+    while(totalSignatures < 400){
+        day++;
+        newSignatures = 2*newSignatures;
+        printf("Day %d: %d new signatures! ", day, newSignatures);
+        totalSignatures = totalSignatures + newSignatures;
+        printf("Total: %d\n", totalSignatures);
+    }
+    return 0;
+}
