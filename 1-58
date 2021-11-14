@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main(void){
+    int totalPopulation = 0;
+    int day = 1;
+    int infected = 1;
+    int newInfected = 0;
+    scanf("%d", &totalPopulation);
+    while(infected < totalPopulation){
+        day++;
+        newInfected = 2*infected;
+        infected = newInfected + infected;
+    }
+    printf("%d\n", day);
+    return 0;
+}
