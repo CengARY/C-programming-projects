@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main(void){
+    int number;
+    int p = 0;
+    scanf("%d", &number);
+    int entered = 0;
+    while(entered != number){
+        scanf("%d", &entered);
+        if(entered < number){
+            printf("it is more\n");
+            p++;
+        }else if(entered > number){
+             printf("it is less\n");
+             p++;
+        }
+        else{
+            p++;
+            printf("Number of tries needed: \n%d", p);
+        }
+    }
+    
+    return 0;
+}
