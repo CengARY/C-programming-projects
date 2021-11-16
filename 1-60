@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main(void){
+    int min;
+    int max;
+    int value;
+    int i = 0;
+    scanf("%d", &min);
+    scanf("%d", &max);
+    while(value != -999){
+        scanf("%d", &value);
+        
+        if((value >= min && value <= max && value != -999) && i == 0){
+            printf("Nothing to report\n");
+        }
+        else if((value < min || value > max ) && value != -999 && i == 0){
+            printf("Alert\n");
+            value = -999;
+        }
+        else if(value == -999){
+            value = -999;
+        }
+    }
+    return 0;
+}
