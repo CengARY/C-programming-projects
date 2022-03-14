@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main(){
+    //! showMemory(start = 65520)
+    int i = 42;
+    int *iAdr = &i;
+    iAdr = &i;
+    printf("Address of i is %p and i = %d.\n", iAdr, *iAdr);
+    
+    return(0);
+}
